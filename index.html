@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Hoteles</title>
+</head>
+<body>
+
+    <div id="block">
+        <section class="Portade_container">
+            <header class="Header">
+                <h1 class="Title">Book it!</h1>
+                <div class="Port_Container">
+                    <div class="Port_grid">
+                        <select class="Port_Container Port_icon" name="Port_countries" id="Port_countries">
+                            <option value="all" id="all">All contries</option>
+                            <option value="country1" id="Argentina">Argentina</option>
+                            <option value="country2">Brasil</option>
+                            <option value="country3">Chile</option>
+                            <option value="country4">Uruguay</option>
+                        </select>
+                        <input class="Port_DateFrom Port_icon" name="date-from" id="date-from" min="NaN-NaN-NaN" max type="date" value="">
+                        <input class="Port_DateTo Port_icon" name="date-from" id="date-from" min="NaN-NaN-NaN" max type="date" value="">
+                        <select class="Port_Prices Port_icon" name="port_prices" id="port_prices">
+                            <option value="all">All prices</option>
+                            <option value="Price1">$</option>
+                            <option value="Price2">$$</option>
+                            <option value="Price3">$$$</option>
+                            <option value="Price4">$$$$</option>
+                        </select>
+                        <select class="Port_sizes Port_icon" name="port_sizes" id="port_sizes">
+                            <option value="all">All sizes</option>
+                            <option value="size1">Small</option>
+                            <option value="size2">Medium</option>
+                            <option value="size3">Large</option>
+                        </select>
+                        <button id="printButton" class="Port_Clear">Clear</button>
+                    </div>
+                    
+                </div>
+                <div class="SecondMenssage_Container">
+                    <p class="SecondMenssage_Title">We have foud for you ......</p>
+                    <p class="SecondMenssage_Content">
+                        All sizes hotel of all category prices in all contries
+                    </p>
+
+                </div>
+                <!-- <button id="printButton">Imprimir Hoteles</button> -->
+            </header>
+        </section>
+    </div>
+        
+    <main>
+        <section id="Container_menu"></section>
+    </main>
+    <script type="module" src="java/main.js"></script>
+    <script type="module" src="java/filtros.js"></script>
+</body>
+</html>
